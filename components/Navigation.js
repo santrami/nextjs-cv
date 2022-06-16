@@ -2,8 +2,8 @@ import Link from 'next/link';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
-import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
-import { faDiagramProject,faAd } from '@fortawesome/free-solid-svg-icons';
+/* import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
+import { faDiagramProject,faAd } from '@fortawesome/free-solid-svg-icons'; */
 
 const navStyle={    
     fontSize: "1.5rem",
