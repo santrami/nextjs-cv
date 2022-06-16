@@ -25,7 +25,6 @@ const Navigation = () => (
             <Navbar.Toggle aria-controls="basic-navbar-nav"  />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto pe-5">
-                    <Icon icon={faDiagramProject} style={{color:"white",alignSelf:"center", fontSize:"0.8em"}} transform="shrink-1"/>
                     <Link href="/github" passHref>
                         <Nav.Link>Projects</Nav.Link>
                     </Link>
