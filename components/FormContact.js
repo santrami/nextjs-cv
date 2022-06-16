@@ -8,7 +8,7 @@ export default function FormContact() {
   function sendEmail(e) {
     e.preventDefault();
     if (e.target[0].value !== '' && e.target[1].value !== '' && e.target[2].value !== '') {
-      emailjs.sendForm('service_11azp9qsn', 'template_11c79qnh9', e.target, '11w5gngxMXzEI1xyNSl')
+      emailjs.sendForm('service_azp9qsn', 'template_c79qnh9', e.target, 'w5gngxMXzEI1xyNSl')
         .then(response => toast.success("Mensaje enviado correctamente", { position: "top-center" }))
         .catch(err => toast.error("ha ocurrido un error, intenta más tarde"))
       e.target.reset()
