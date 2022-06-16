@@ -1,0 +1,33 @@
+body {
+    /*  background-color: #555; */
+    background-image: url('/back4.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+form {
+    background-color: #000000aa !important;
+    width: 40%;
+    margin: 0 auto;
+}
+
+@media screen and (max-device-width:1040px),
+screen and (max-width:640px) {
+    form {
+        Width: 85%;
+    }
+}
+
+input,
+textarea {
+    background-color: #00000011 !important;
+    color: white !important;
+    font-size: larger !important;
+}
+
+.form-control:focus {
+    background-color: #0000ff22 !important;
+    transition: 0.5s;
+}
