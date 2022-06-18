@@ -4,7 +4,8 @@ export default function Header() {
         background: "black",
         backgroundImage: "url('/back1.png')",
         backgroundRepeat: "no-repeat",
-        backgroundSize: "100%", 
+        backgroundSize: "cover", 
+        backgroundPosition:"top center",
         opacity:"0.8"       
     }
     return (
