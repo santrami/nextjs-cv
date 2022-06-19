@@ -49,9 +49,20 @@ textarea {
     z-index:-1!important;
 }
 .canvas2{
-    height:100vh!important;
+    height:50vh!important;
     width:100vw!important;    
     z-index:1!important;
     margin-left:-20%!important;
     position: relative;
 }
+
+/* @media screen and (max-device-width:1040px),
+screen and (max-width:640px) {
+    .canvas2{
+        height:50vh!important;
+        width:100vw!important;    
+        z-index:1!important;
+        margin-left:-20%!important;
+        position: relative;
+    }
+} */
