@@ -12,16 +12,17 @@ export default function SphereAnimated({ args, scale, position }) {
         <Sphere opacity={0} visible args={args} scale={scale} position={position}>
             {/* <MeshDistortMaterial attach="material" speed={1} distort={1} /> */}
             <meshStandardMaterial map={normal} normalMap={image} />
-            <Sparkles count={500} size={2} speed={0.1} opacity={1} scale={4} color={"#ffff00"} />
             <Cloud
                 
                 opacity={1}
-                speed={2} // Rotation speed
-                width={0.1} // Width of the full cloud
-                depth={1} // Z-dir depth
-                segments={2} // Number of particles
+                speed={0} // Rotation speed
+                width={0.02} // Width of the full cloud
+                depth={0.5} // Z-dir depth
+                segments={5} // Number of particles
                 color={"#000000"}
             />
+            <Sparkles count={1000} size={10} speed={0.7} opacity={1} scale={3.5} color={"#222200"} />
+
         </Sphere>
     )
 }
