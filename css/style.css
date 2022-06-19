@@ -63,7 +63,7 @@ screen and (max-width:728px) {
         position:relative;
         left:0;
         height:50vh!important;
-        width:100vw!important;    
+        width:120vw!important;    
         z-index:1!important;        
     }
 }
