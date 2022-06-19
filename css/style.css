@@ -48,16 +48,18 @@ textarea {
     position:fixed!important;
     z-index:-1!important;
 }
+
 .canvas2{
     height:50vh!important;
-    width:100vw!important;    
+    width:auto!important;    
     z-index:1!important;
     margin-left:0%!important;
-    left:0;
-    position: relative;
+    left: 0 !important;
+    position: relative!important;
+    
 }
 
-@media screen and (max-device-width:1040px),
+/* @media screen and (max-device-width:1040px),
 screen and (max-width:728px) {
     .canvas2{
         position:relative;
@@ -66,4 +68,4 @@ screen and (max-width:728px) {
         width:120vw!important;    
         z-index:1!important;        
     }
-}
+} */
