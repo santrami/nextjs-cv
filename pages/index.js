@@ -11,10 +11,10 @@ const Index = () => (
     <Layout>        
         <Header />
         <Canvas className='canvas1'>
-        <fog attach="fog" args={['#272730', 16, 30]} />
+            <fog attach="fog" args={['#ffffff', 30, 30]} />
             <OrbitControls  speed={1}/>
             <PerspectiveCamera makeDefault position={[0, 0,3]} fov={75}>
-            <ContactShadows renderOrder={2} color="black" resolution={1024} frames={1} scale={10} blur={1.5} opacity={0.65} far={0.5} />
+            
             <ambientLight intensity={0.5} />
             <directionalLight intensity={0.1} position={[0,0,1]} />
             </PerspectiveCamera>
@@ -25,17 +25,17 @@ const Index = () => (
                 <Stars radius={600} depth={50} count={10000} factor={8} />
         </Canvas>
         <Canvas className='canvas2'>
-        <fog attach="fog" args={['#272730', 16, 30]} />
+            
             <OrbitControls autoRotateSpeed={2} autoRotate />
             <PerspectiveCamera makeDefault position={[0, 0,4]} fov={45}>
-            <ContactShadows renderOrder={2} color="black" resolution={1024} frames={1} scale={10} blur={1.5} opacity={0.65} far={0.5} />
+           
             <ambientLight intensity={3} />
             <pointLight intensity={2} position={[0,-15,0]} />
             </PerspectiveCamera>
             <Suspense fallback={null}>                              
                 <SphereAnimated args={[1, 64, 64]} position={[0,0,0]}/>                 
             </Suspense>
-                <Sparkles count={1000} size={1.5} speed={0} opacity={1} scale={[2,0,2]}color={"#aaaaaa"} />    
+                <Sparkles count={1000} size={1.5} speed={0.2} opacity={1} scale={[2,0,2]}color={"#ffffff"} />    
         </Canvas>
         <Skills />
         
