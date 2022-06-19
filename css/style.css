@@ -51,12 +51,8 @@ textarea {
 
 .canvas2{
     height:50vh!important;
-    width:auto!important;    
-    z-index:1!important;
-    margin-left:0%!important;
-    left: 0 !important;
-    position: relative!important;
-    
+    width:auto!important;          
+    position: relative!important;    
 }
 
 /* @media screen and (max-device-width:1040px),
