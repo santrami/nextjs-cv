@@ -58,7 +58,7 @@ textarea {
 }
 
 @media screen and (max-device-width:1040px),
-screen and (max-width:640px) {
+screen and (max-width:728px) {
     .canvas2{
         position:relative;
         left:0;
