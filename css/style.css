@@ -52,7 +52,7 @@ textarea {
     height:50vh!important;
     width:100vw!important;    
     z-index:1!important;
-    margin-left:-20%!important;
+    margin-left:0%!important;
     left:0;
     position: relative;
 }
