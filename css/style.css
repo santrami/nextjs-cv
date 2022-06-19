@@ -5,7 +5,7 @@
 }
 
 body {
-      background-color: #fff; 
+      background-color: rgb(0, 0, 0); 
     /*background-image: url('/back4.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -47,4 +47,11 @@ textarea {
     opacity: 1;
     position:fixed!important;
     z-index:-1!important;
+}
+.canvas2{
+    height:100vh!important;
+    width:100vw!important;    
+    z-index:1!important;
+    margin-left:-20%!important;
+    position: relative;
 }

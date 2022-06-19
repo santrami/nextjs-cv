@@ -1,7 +1,5 @@
 import { Sphere, Cloud, MeshDistortMaterial, Sparkles, PointMaterial } from '@react-three/drei'
 import { TextureLoader } from 'three'
-import normalMap from '../public/normal-map.jpg'
-import moonMap from '../public/moon-normal-map.jpg'
 import { useLoader } from '@react-three/fiber'
 
 
@@ -11,17 +9,17 @@ export default function SphereAnimated({ args, scale, position }) {
     return (
         <Sphere opacity={0} visible args={args} scale={scale} position={position}>
             {/* <MeshDistortMaterial attach="material" speed={1} distort={1} /> */}
-            <meshStandardMaterial map={normal} normalMap={image} />
+            <meshStandardMaterial map={normal} normalMap={image}/>
             <Cloud
                 
-                opacity={1}
-                speed={0} // Rotation speed
-                width={0.02} // Width of the full cloud
-                depth={0.5} // Z-dir depth
-                segments={5} // Number of particles
-                color={"#000000"}
+                opacity={0.5}
+                speed={1} // Rotation speed
+                width={1} // Width of the full cloud
+                depth={.013} // Z-dir depth
+                segments={2} // Number of particles
+                color={"#aaa"}
             />
-            <Sparkles count={1000} size={10} speed={0.7} opacity={1} scale={3.5} color={"#222200"} />
+            <Sparkles count={20000} size={1} speed={0} opacity={1} scale={20} color={"#777700"} />
 
         </Sphere>
     )
