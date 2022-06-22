@@ -5,7 +5,7 @@
 }
 
 body {
-      background-color: rgb(0, 0, 20); 
+      background-color: rgb(0, 0, 10); 
     /*background-image: url('/back4.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -55,13 +55,13 @@ textarea {
     position: relative!important;    
 }
 
-/* @media screen and (max-device-width:1040px),
+@media screen and (max-device-width:1040px),
 screen and (max-width:728px) {
-    .canvas2{
-        position:relative;
+    .canvas1{
+        position:fixed;
         left:0;
-        height:50vh!important;
-        width:120vw!important;    
-        z-index:1!important;        
+        height:100vh!important;
+        width:100vw!important;    
+        z-index:-1!important;        
     }
-} */
+}
