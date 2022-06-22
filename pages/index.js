@@ -14,7 +14,7 @@ const Index = () => (
         <Header />
         <Canvas className='canvas1'>
 
-            <OrbitControls autoRotate={true} speed={1} rotation={[1, 22, 0]} />
+            <OrbitControls autoRotate={true} autoRotateSpeed={0.3} speed={1} rotation={[1, 22, 0]} />
             <PerspectiveCamera makeDefault position={[0, 0.1, 2]} fov={75} />
             <hemisphereLight castShadow={true} color-setHSL={[1, 1, 1]} position={[10, 150, 0]} args={["#ffffff", "#ffffff", 0.1]} />
             <directionalLight castShadow={true} intensity={2} position={[0, 10, 20]} />
