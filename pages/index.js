@@ -6,7 +6,9 @@ import { Canvas, useThree, castShadow } from '@react-three/fiber';
 import { OrbitControls, Stars, PerspectiveCamera, SpotLight, Sparkles, Backdrop } from '@react-three/drei';
 import SphereAnimated from '../components/SphereAnimated';
 import Asteroids from '../components/Asteroids';
-import { Suspense } from 'react';
+import { Suspense, useRef } from 'react';
+import Animation from '../components/Animation';
+import { useSpring, animated } from '@react-spring/three'
 
 const Index = () => (
 
@@ -62,19 +64,17 @@ const Index = () => (
             <Sparkles count={20} size={100} speed={1} opacity={1} scale={20} noise={10} color={"#ffffff"} />
             <Stars radius={600} depth={50} count={10000} factor={8} />
         </Canvas>
-        {/* <Canvas className='canvas2'>
-
-            <OrbitControls autoRotateSpeed={0.1} autoRotate />
-            <PerspectiveCamera makeDefault position={[0, 0.1, 2]} fov={35}>
+        <Canvas className='canvas2'>
+        <OrbitControls speed={1} />           
+            <PerspectiveCamera makeDefault  fov={40}>
                 <pointLight intensity={1} position={[0, 10, 3]} />
                 <directionalLight intensity={1} position={[1, 2, -10]} />
                 <ambientLight intensity={0.2} />
             </PerspectiveCamera>
             <Suspense fallback={null}>
-            <SphereAnimated args={[1, 64, 64]} position={[0, 0, 0]} />
-                <Asteroids args={[1.1, 180]} position={[10, 10, 10]} />
             </Suspense>
-        </Canvas> */}
+            <Animation/>
+        </Canvas>
         <Skills />
 
         <Studies />
