@@ -26,17 +26,24 @@ export default function Asteroids({ args, position }) {
         geometry.attributes.uv.setXY(i, v3.length() < 4 ? 0 : 1, -10);
     }
 
+    const basicRef=useRef()
+    const asteRef= useRef()
+    useFrame(()=>{
+        basicRef.current.rotation.z-=0.0005
+        asteRef.current.rotation.z-=0.0005
+    })
+
     return (
-        <>
-            <mesh scale={0.38} receiveShadow={true} geometry={geometry} rotation={[Math.PI / 2, 0, 0]} >
+        <group>
+            <mesh ref={basicRef} scale={0.38}  castShadow receiveShadow geometry={geometry} rotation={[Math.PI / 2, 0, 0]} >
 
                 {/* <ringGeometry args={[1, 1.5,25]} /> */}
-                <meshStandardMaterial transparent={true} metalness={0.9} roughness={0.4} side={2} map={rings} opacity={0.7} />
+                <meshStandardMaterial transparent={true} metalness={0.4} roughness={0.4} side={2} map={rings} opacity={0.7} />
             </mesh>
 
 
 
-            <mesh rotation={[Math.PI / 2, 0, 0]} position={[0, 0, 0]} >
+            <mesh castShadow receiveShadow ref={asteRef} rotation={[Math.PI / 2, 0, 0]} position={[0, 0, 0]} >
                 <points>
                     <PointMaterial transparent={true} map={asteroide} size={randomNumber(0.001, 0.007)} />
                     <circleGeometry args={[randomNumber(1.2, 1.9), randomNumber(200, 500)]} />
@@ -350,7 +357,7 @@ export default function Asteroids({ args, position }) {
 
 
             </mesh>
-        </>
+        </group>
 
     )
 }
