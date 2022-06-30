@@ -10,12 +10,14 @@ import Animation from '../components/Animation';
 import { useSpring, animated } from '@react-spring/three'
 import Camera from '../components/Camera';
 import Asteroids from '../components/Asteroids'
+import DisablePrintScreen from '../components/disablePrintScreen';
 
 
 const Index = () => (
     
 
     <Layout>
+        <DisablePrintScreen />
         <Header />
         <Canvas className='canvas1'>
             <Camera />
