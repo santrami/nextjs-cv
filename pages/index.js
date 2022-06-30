@@ -17,7 +17,7 @@ const Index = () => (
     
 
     <Layout>
-        <DisablePrintScreen />
+        <DisablePrintScreen/>
         <Header />
         <Canvas className='canvas1'>
             <Camera />
