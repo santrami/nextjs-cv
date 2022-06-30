@@ -10,7 +10,7 @@ import Animation from '../components/Animation';
 import { useSpring, animated } from '@react-spring/three'
 import Camera from '../components/Camera';
 import Asteroids from '../components/Asteroids'
-import DisablePrintScreen from '../components/disablePrintScreen';
+import DisablePrintScreen from '../components/DisablePrintScreen';
 
 
 const Index = () => (
