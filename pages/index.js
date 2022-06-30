@@ -77,7 +77,7 @@ const Index = () => (
         </Canvas> */}
         {/* <Skills /> */}
 
-        <Studies />
+        {/* <Studies /> */}
 
     </Layout>
 )
